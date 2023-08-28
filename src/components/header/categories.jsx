@@ -9,13 +9,18 @@ const Categories = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="m-auto">
-                        <Nav.Link as={Link} to="/">All</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/apps-and-salads">APPS & SALADS</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/sides">SIDES</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/kids-meal">KIDS MEAL</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/rawbar-and-seafood">RAW BAR & SEAFOOD</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/sandwiches">SANDWICHES</Nav.Link>
-                        <Nav.Link as={Link} to="/menu/specialties">SPECIALTIES</Nav.Link>
+                        <Nav.Link as={Link} to="/apps-and-salads">APPS & SALADS</Nav.Link>
+                        <Nav.Link as={Link} to="/sides">SIDES</Nav.Link>
+                        <Nav.Link as={Link} to="/kids-meal">KIDS MEAL</Nav.Link>
+                        <Nav.Link as={Link} to="/rawbar-and-seafood">RAW BAR & SEAFOOD</Nav.Link>
+                        <Nav.Link as={Link} to="/sandwiches">SANDWICHES</Nav.Link>
+                        <Nav.Link as={Link} to="/specialties">SPECIALTIES</Nav.Link>
+
+                        <Nav.Link as={Link} to="/cocktails">COCKTAILS</Nav.Link>
+                        <Nav.Link as={Link} to="/brews">BREWS</Nav.Link>
+                        <Nav.Link as={Link} to="/white-wines">WHITE WINES</Nav.Link>
+                        <Nav.Link as={Link} to="/red-wines">RED WINES</Nav.Link>
+                        <Nav.Link as={Link} to="/frozen-drinks">FROZEN DRINKS</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

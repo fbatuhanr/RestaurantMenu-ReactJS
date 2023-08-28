@@ -8,26 +8,26 @@ import {
     Link
 } from "react-router-dom";
 
-import {Container} from "react-bootstrap";
-
-import Home from "./pages/home";
-import Menu from "./pages/menu";
 
 import Header from "./components/header/header";
+import Menu from "./pages/menu";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
   <Router>
-    <Container className="restaurant-menu py-3">
+    <div id="app" className="py-3">
 
         <Header />
 
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/menu/:menuType" element={<Menu />} />
+            <Route path="/" element={<Menu />} />
+            <Route path="/:category" element={<Menu />} />
         </Routes>
 
-    </Container>
+        <Footer />
+
+    </div>
   </Router>
   );
 }
