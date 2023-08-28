@@ -16,17 +16,13 @@ import Footer from "./components/footer/footer";
 function App() {
   return (
   <Router>
-    <div id="app" className="py-3">
-
+    <div id="app">
         <Header />
-
-        <Routes>
-            <Route path="/" element={<Menu />} />
-            <Route path="/:category" element={<Menu />} />
-        </Routes>
-
+            <Routes>
+                <Route path="/" element={<Menu />} />
+                <Route path="/:category" element={<Menu />} />
+            </Routes>
         <Footer />
-
     </div>
   </Router>
   );

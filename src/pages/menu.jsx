@@ -10,7 +10,7 @@ const Menu = () => {
     const menu = category ? [MenuCategories[category]] : Object.values(MenuCategories);
 
     return (
-        <Container className='pt-4 pb-3'>
+        <Container id='menu' className='pt-4 pb-3' fluid>
             {
                 menu.map(currMenu => {
 
@@ -18,11 +18,11 @@ const Menu = () => {
                     let menuItems = currMenu.items;
 
                     return (
-                        <div class='menu-content mb-5'>
+                        <div class='menu-content mb-4'>
                             <Row>
-                                <Col xs={12} className='text-center'>
-                                    {menuInfo && <h1>{menuInfo.title}</h1>}
-                                    {menuInfo && <p className='m-1'>{menuInfo.description}</p>}
+                                <Col xs={12} className='text-center text-white'>
+                                    {menuInfo && <h1 className='m-2 fw-800'>{menuInfo.title}</h1>}
+                                    {menuInfo && <p className='m-1 fw-500'>{menuInfo.description}</p>}
                                 </Col>
                             </Row>
                             <Row>
@@ -57,7 +57,7 @@ const Menu = () => {
 
             <Row>
                 <Col>
-                    <div className="border border-secondary px-3 py-2 mt-3">
+                    <div className="bg-white border border-dark rounded-top px-3 py-2 mt-3">
                         <h2 className="text-center">BREAD SERVICE</h2>
                         <p>
                             Skillet Corn Bread with Our House Special Crawfish and Conecuh Sausage Cream Gravy
@@ -68,7 +68,7 @@ const Menu = () => {
             </Row>
             <Row>
                 <Col>
-                    <div className="border border-warning px-3 py-2 my-2">
+                    <div className="bg-white border border-warning rounded-bottom px-3 py-2 my-2">
                         <h4 className="text-center">HOOK & COOK</h4>
                         <h3 className="text-center">BRING US WHAT YOU CAUGHT!!!</h3>
                         <p>

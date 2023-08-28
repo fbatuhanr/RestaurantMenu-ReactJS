@@ -1,3 +1,9 @@
+import Logo from '../assets/images/zekes-logo.png';
+
+export const General = {
+    title: 'Zeke\'s Lunch',
+    logoUrl: Logo
+}
 
 export const MenuCategories = {
 
@@ -63,6 +69,9 @@ export const MenuCategories = {
         ]
     },
     'sides': {
+        info: {
+            title: 'SIDES'
+        },
         items: [
             {
                 title: 'Chargrilled Broccolini',
@@ -261,7 +270,6 @@ export const MenuCategories = {
             }
         ]
     },
-
 
     'cocktails':{
         info: {
