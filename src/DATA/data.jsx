@@ -1,10 +1,18 @@
+import MenuData from './menu.json';
 import Logo from '../assets/images/logo.png';
+
+export const LoginInfo = {
+    username: "admin",
+    password: "123"
+}
 
 export const General = {
     title: 'LUNCH',
     logoUrl: Logo
 }
 
+export const MenuCategories = MenuData;
+/*
 export const MenuCategories = {
 
     'sandwiches':{
@@ -286,3 +294,4 @@ export const MenuCategories = {
         ]
     }
 }
+*/
