@@ -54,25 +54,13 @@ const Menu = () => {
                 })
             }
 
-
-            <Row>
-                <Col>
-                    <div className="bg-white border border-dark rounded-top px-3 py-2 mt-3">
-                        <h2 className="text-center">BREAD SERVICE</h2>
-                        <p>
-                            Skillet Corn Bread with Our House Special Crawfish and Conecuh Sausage Cream Gravy
-                            <i className='text-secondary'> - $12</i>
-                        </p>
-                    </div>
-                </Col>
-            </Row>
             <Row>
                 <Col>
                     <div className="bg-white border border-warning rounded-bottom px-3 py-2 my-2">
                         <h4 className="text-center">HOOK & COOK</h4>
-                        <h3 className="text-center">BRING US WHAT YOU CAUGHT!!!</h3>
+                        <h3 className="text-center">BRING US WHAT YOU CAUGHT!</h3>
                         <p>
-                            Have it grilled, blackened or fried with two sides of your party’s choice. Crispy fries, dirty rice, house coleslaw or mediterranean couscous. Served up family style for an unforgettable end to your charter trip.
+                            Please select your preferred cooking method for the dish, whether it be grilled, blackened, or fried, and pair it with two sides of your party's choosing. The options available for sides include crispy fries, dirty rice, house coleslaw, or Mediterranean couscous. This meal will be served family-style, providing an unforgettable conclusion to your charter trip.
                             <i className='text-secondary'> - $22 per person</i>
                         </p>
                     </div>

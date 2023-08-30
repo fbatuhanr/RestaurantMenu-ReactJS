@@ -8,7 +8,7 @@ const Footer = () => {
                 <Row>
                     <Col>
                         <p className="text-center fs-8 mt-3">
-                            <i>Consuming raw or undercooked Meats, Poultry, Seafood, Shellfish or Eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.</i>
+                            <i>The ingestion of uncooked or insufficiently cooked meats, poultry, seafood, shellfish, or eggs may heighten the likelihood of contracting a foodborne ailment, particularly if one has specific medical conditions.</i>
                         </p>
                     </Col>
                 </Row>
