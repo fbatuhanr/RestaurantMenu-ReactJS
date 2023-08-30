@@ -8,23 +8,18 @@ import {
     Link
 } from "react-router-dom";
 
-
-import Header from "./components/header/header";
-import Menu from "./pages/menu";
-import Footer from "./components/footer/footer";
+import Main from "./pages/main";
+import Admin from './pages/admin';
 
 function App() {
   return (
-  <Router>
-    <div id="app">
-        <Header />
-            <Routes>
-                <Route path="/" element={<Menu />} />
-                <Route path="/:category" element={<Menu />} />
-            </Routes>
-        <Footer />
-    </div>
-  </Router>
+      <Router>
+        <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/:category" element={<Main />} />
+            <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </Router>
   );
 }
 

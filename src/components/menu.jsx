@@ -1,13 +1,11 @@
 import React from 'react';
-import {useParams} from "react-router-dom";
-import {MenuCategories} from "../DATA/data";
+
+import {MenuCategories} from "../DATA/data"
 import {Button, Card, Col, Container, Row} from "react-bootstrap";
 
-const Menu = () => {
+const Menu = (props) => {
 
-    const {category} = useParams();
-
-    const menu = category ? [MenuCategories[category]] : Object.values(MenuCategories);
+    const menu = props?.category ? [MenuCategories[props.category]] : Object.values(MenuCategories);
 
     return (
         <Container id='menu' className='pt-4 pb-3' fluid>
