@@ -1,31 +1,45 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-import {MenuCategories} from "../DATA/data"
 import {Button, Card, Col, Container, Row} from "react-bootstrap";
+import axios from "axios";
 
 const Menu = (props) => {
 
-    const menu = props?.category ? [MenuCategories[props.category]] : Object.values(MenuCategories);
+    //const menu = props?.category ? [MenuCategories[props.category]] : Object.values(MenuCategories);
+
+    const [menu, setMenu] = useState(null);
+
+    useEffect(()=>{
+
+        axios.get('http://localhost:3001/categories')
+             .then(result => {
+                 setMenu(props?.category ? [result.data[props.category]] : Object.values(result.data))
+            })
+
+        console.log('get get')
+
+    },[props]);
 
     return (
         <Container id='menu' className='pt-4 pb-3' fluid>
             {
-                menu.map(currMenu => {
 
-                    let menuInfo = currMenu.info;
-                    let menuItems = currMenu.items;
+                menu && menu.map(element => {
+
+                    let info = element.info;
+                    let items = element.items;
 
                     return (
                         <div class='menu-content mb-4'>
                             <Row>
                                 <Col xs={12} className='text-center text-white'>
-                                    {menuInfo && <h1 className='m-2 fw-800'>{menuInfo.title}</h1>}
-                                    {menuInfo && <p className='m-1 fw-500'>{menuInfo.description}</p>}
+                                    {info && <h1 className='m-2 fw-800'>{info.title}</h1>}
+                                    {info && <p className='m-1 fw-500'>{info.description}</p>}
                                 </Col>
                             </Row>
                             <Row>
                                 {
-                                    menuItems.map(item=>{
+                                    items.map(item => {
                                         return (
                                             <Col xs={12}>
                                                 <Card className='my-1'>

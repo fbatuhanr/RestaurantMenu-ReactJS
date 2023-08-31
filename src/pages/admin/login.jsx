@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {LoginInfo} from "../../DATA/data";
+import {LoginInfo} from '../../Config';
 import {Container, Row, Col, Card, Form, Button} from "react-bootstrap";
 import {AiFillEye, AiFillEyeInvisible} from "react-icons/ai";
 

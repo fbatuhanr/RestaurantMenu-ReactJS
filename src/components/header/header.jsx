@@ -3,7 +3,7 @@ import React from 'react';
 import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
-import {General} from "../../DATA/data";
+import {General} from '../../Config';
 
 const Header = () => {
     return (
