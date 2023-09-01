@@ -2,29 +2,34 @@ import React, {useState, useEffect} from 'react'
 import {Container, Row, Col, Card, Form, Button, Placeholder} from "react-bootstrap"
 
 import {AiFillPlusCircle} from "react-icons/ai"
+import axios from "axios";
 
 const Dashboard = () => {
 
-    const [data, setData] = useState(null);
+    const [menu, setMenu] = useState(null);
 
-    // const deleteItem = (id) => {
-    //     const newItems = items.filter((item) => item.id !== id);
-    //     setItems(newItems);
-    // };
+    useEffect(()=>{
+
+        axios.get('http://localhost:3001/categories')
+            .then(result => {
+                setMenu(result.data)
+            })
+
+    },[]);
 
 
     const [newDataObject, setNewDataObject] = useState([]);
-    const handleNewItemChange = (e, slug) => {
+    const handleNewItemChange = (e, id, slug) => {
 
-        if(newDataObject[0] && newDataObject[0] !== slug)
+        if(newDataObject[0] && newDataObject[0] !== id)
             setNewDataObject([]);
 
         const { name, value } = e.target;
-        setNewDataObject(state => [slug, ({ ...state[1], [name]: value })])
+        setNewDataObject(state => [id, ({ ...state[1], [name]: value })])
     }
     const addNewItem = () => {
 
-        setData(current => {
+        /*setMenu(current => {
             return {
                 ...current,
                 [newDataObject[0]]: {
@@ -33,15 +38,16 @@ const Dashboard = () => {
                 }
             }
         })
-        updateJsonData();
+        console.log(menu)*/
+
+        axios.put(`http://localhost:3001/categories/${newDataObject[0]}`, newDataObject[1])
+            .then(result=>{
+                console.log(result)
+            })
     }
 
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
-
     const updateJsonData = () => {
-        const json = JSON.stringify(data, null, 2);
+        const json = JSON.stringify(menu, null, 2);
         const blob = new Blob([json], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -60,10 +66,9 @@ const Dashboard = () => {
                     </Row>
                     <Row>
                         {
-                            Object.entries(data).map((item) => {
-                                    let slug = item[0];
-                                    let info = item[1].info;
-                                    let items = item[1].items;
+                            menu && menu.map((item) => {
+
+                                    let {id, slug, info, items} = item;
                                     return (
                                         <Col xs={12} className="my-1">
                                             <Card>
@@ -113,19 +118,19 @@ const Dashboard = () => {
                                                                 {
                                                                     // we used first element of 'items' for take reference about object keys
                                                                     Object.entries(items[0]).map((j, inx)=>{
-                                                                      return (
-                                                                          <Form.Group as={Row} className="my-1">
-                                                                              <Form.Label column xs={3} className="text-end">
-                                                                                  {j[0]}:
-                                                                              </Form.Label>
-                                                                              <Col xs={9}>
-                                                                                  <Form.Control type="text" name={j[0]}
-                                                                                                value={newDataObject[j[0]]}
-                                                                                                onChange={e=>handleNewItemChange(e, slug)}
-                                                                                  />
-                                                                              </Col>
-                                                                          </Form.Group>
-                                                                      )
+                                                                        return (
+                                                                            <Form.Group as={Row} className="my-1">
+                                                                                <Form.Label column xs={3} className="text-end">
+                                                                                    {j[0]}:
+                                                                                </Form.Label>
+                                                                                <Col xs={9}>
+                                                                                    <Form.Control type="text" name={j[0]}
+                                                                                                  value={newDataObject[j[0]]}
+                                                                                                  onChange={e=>handleNewItemChange(e, id, slug)}
+                                                                                    />
+                                                                                </Col>
+                                                                            </Form.Group>
+                                                                        )
                                                                     })
                                                                 }
                                                                 <div className="d-grid">

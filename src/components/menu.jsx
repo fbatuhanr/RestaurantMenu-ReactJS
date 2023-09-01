@@ -11,12 +11,10 @@ const Menu = (props) => {
 
     useEffect(()=>{
 
-        axios.get('http://localhost:3001/categories')
+        axios.get(`http://localhost:3001/categories${props?.category ? `?slug=${props.category}` : ''}`)
              .then(result => {
-                 setMenu(props?.category ? [result.data[props.category]] : Object.values(result.data))
+                 setMenu(result.data)
             })
-
-        console.log('get get')
 
     },[props]);
 

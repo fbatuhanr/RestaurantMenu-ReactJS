@@ -1,7 +1,8 @@
 {
-  "categories": {
-
-    "sandwiches": {
+  "categories": [
+    {
+      "id": 1,
+      "slug": "sandwiches",
       "info": {
         "title": "SANDWICHES",
         "description": "Served with Perfectly Seasoned Fries."
@@ -39,7 +40,9 @@
         }
       ]
     },
-    "specialties": {
+    {
+      "id": 2,
+      "slug": "specialties",
       "info": {
         "title": "SPECIALTIES"
       },
@@ -76,7 +79,9 @@
         }
       ]
     },
-    "kids-meal": {
+    {
+      "id": 3,
+      "slug": "kids-meal",
       "info": {
         "title": "KIDS MEAL",
         "description": "Served with Our Perfectly Seasoned Fries. 12 and Under Only."
@@ -99,7 +104,9 @@
         }
       ]
     },
-    "cocktails": {
+    {
+      "id": 4,
+      "slug": "cocktails",
       "info": {
         "title": "COCKTAILS"
       },
@@ -161,7 +168,9 @@
         }
       ]
     },
-    "brews": {
+    {
+      "id": 5,
+      "slug": "brews",
       "info": {
         "title": "BREWS"
       },
@@ -216,7 +225,9 @@
         }
       ]
     },
-    "wines": {
+    {
+      "id": 6,
+      "slug": "wines",
       "info": {
         "title": "WINES"
       },
@@ -278,5 +289,5 @@
         }
       ]
     }
-  }
+  ]
 }
