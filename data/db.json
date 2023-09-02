@@ -9,9 +9,9 @@
       },
       "items": [
         {
-          "title": "* SPECIAL BURGER",
+          "title": "* SPECIAL BURGERRR",
           "description": "An 8-ounce fresh beef patty accompanied by American cheese is presented on a brioche bun, complemented by a special sauce, shredded lettuce, sliced onions, tomato, and sliced pickle.",
-          "price": 16
+          "price": "22"
         },
         {
           "title": "* LOBSTER ROLL",
@@ -36,7 +36,7 @@
         {
           "title": "FANTASTIC BURGER",
           "description": "The dish comprises of 8 ounces of Wagyu beef, accompanied by Burrata, fire roasted tomatoes, arugula, pickled red onion, and house-made pesto, all served on a Brioche bun. The meal is served with a side of fries. To fully appreciate the flavors of this dish, the chef recommends ordering it cooked to a medium-rare temperature.",
-          "price": 26
+          "price": "26"
         }
       ]
     },

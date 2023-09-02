@@ -7,7 +7,6 @@
     <list default="true" id="7e06f6cc-2f75-47b3-a9ba-c9cda2ba0575" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/admin/dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/dashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693421448329</updated>
-      <workItem from="1693421450250" duration="26406000" />
+      <workItem from="1693421450250" duration="41893000" />
     </task>
     <servers />
   </component>
