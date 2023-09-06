@@ -9,11 +9,6 @@
       },
       "items": [
         {
-          "title": "* SPECIAL BURGERRR",
-          "description": "An 8-ounce fresh beef patty accompanied by American cheese is presented on a brioche bun, complemented by a special sauce, shredded lettuce, sliced onions, tomato, and sliced pickle.",
-          "price": "22"
-        },
-        {
           "title": "* LOBSTER ROLL",
           "description": "The warm Maine lobster is presented in a manner that is accompanied by drawn butter and Old Bay aioli. It is served on a split-top brioche bun.",
           "price": 30
@@ -172,7 +167,7 @@
       "id": 5,
       "slug": "brews",
       "info": {
-        "title": "BREWS"
+        "title": "BREWSx"
       },
       "items": [
         {

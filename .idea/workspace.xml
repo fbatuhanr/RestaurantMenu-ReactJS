@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e06f6cc-2f75-47b3-a9ba-c9cda2ba0575" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/admin/dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/dashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,7 @@
         <option value="com.haulmont.rcb.index" />
         <option value="com.haulmont.rcb.useInitial" />
         <option value="com.haulmont.rcb.README" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/batuhan/MyProjects/restaurantmenu-reactjs",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +75,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693421448329</updated>
-      <workItem from="1693421450250" duration="41893000" />
+      <workItem from="1693421450250" duration="42160000" />
+      <workItem from="1693918722949" duration="1445000" />
+      <workItem from="1693923885861" duration="277000" />
+      <workItem from="1694037325579" duration="5238000" />
     </task>
     <servers />
   </component>
