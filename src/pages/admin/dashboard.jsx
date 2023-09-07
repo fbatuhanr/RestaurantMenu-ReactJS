@@ -199,6 +199,8 @@ const Dashboard = () => {
             items: []
         }
 
+        e.target.reset();
+
         axios.post(`http://localhost:3001/categories`, subCategoryData)
             .then(response => {
 
@@ -210,6 +212,7 @@ const Dashboard = () => {
                     })
             });
     }
+
     return (
         <Container className="py-3">
             <Row className="justify-content-center">
@@ -339,6 +342,7 @@ const Dashboard = () => {
                                 }
                             )
                         }
+
                     </Row>
                     <Row>
                         <Col xs={12} className="mt-4">

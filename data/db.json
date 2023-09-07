@@ -4,8 +4,8 @@
       "id": 1,
       "slug": "sandwiches",
       "info": {
-        "title": "SANDWICHES",
-        "description": "Served with Perfectly Seasoned Fries."
+        "title": "SANDWICHESS",
+        "description": "Served with Perfectly Seasoned Fries.."
       },
       "items": [
         {
@@ -32,6 +32,11 @@
           "title": "FANTASTIC BURGER",
           "description": "The dish comprises of 8 ounces of Wagyu beef, accompanied by Burrata, fire roasted tomatoes, arugula, pickled red onion, and house-made pesto, all served on a Brioche bun. The meal is served with a side of fries. To fully appreciate the flavors of this dish, the chef recommends ordering it cooked to a medium-rare temperature.",
           "price": "26"
+        },
+        {
+          "title": "CAJUN BURGER",
+          "description": "CRISPY",
+          "price": "999"
         }
       ]
     },
