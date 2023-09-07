@@ -171,7 +171,7 @@ const Dashboard = () => {
 
                         console.log(`Deleted: ${response}`)
                         setMenu([]);
-                        Swal.fire('Saved!', '', 'success')
+                        Swal.fire('Category Deleted!', '', 'success')
                             .then(()=>{
                                 assignData();
                             })
